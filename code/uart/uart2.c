@@ -2,7 +2,6 @@
 #include "circBuffer.h"
 //#include "apDefinitions.h"
 //#include "MultiCircBuffer.h"
-#include "FSIO.h"
 #include "uart2.h"
 #include "stdio.h"
 #include "loggerDefinitions.h"
@@ -20,43 +19,16 @@ CBRef UART_receiveBuffer;
 //static DWORD CurrentSector;
 
 //#ifdef DMAON
-	#include "SD-SPI.h"
 	
 	// struct containing all parts a packet to allow easy writing
 	
-	union buffa_t
-	{
-		struct
-		{
-			char header1;
-			char header2;
-			BYTE SendBufferA[DMABUFFERSIZE];
-			char footer1;
-			char footer2;
-			BYTE checksum;
-			int id;
-		} inter;
-		BYTE total[SECTORSIZE];
-	} buffa;	
+	
 
-	union buffb_t
-	{
-		struct
-		{
-			char header1;
-			char header2;
-			BYTE SendBufferB[DMABUFFERSIZE];
-			char footer1;
-			char footer2;
-			BYTE checksum;
-			int id;			
-		} inter;
-		BYTE total[SECTORSIZE];
-	} buffb;	
+	
 
 		
-	BYTE BufferA[DMABUFFERSIZE] __attribute__((space(dma))) = {0};
-	BYTE BufferB[DMABUFFERSIZE] __attribute__((space(dma))) = {0};
+	unsigned char BufferA[DMABUFFERSIZE] __attribute__((space(dma))) = {0};
+	unsigned char BufferB[DMABUFFERSIZE] __attribute__((space(dma))) = {0};
 	static char bufferflag;
 	static char need_buffer;
 	//FSFILE * pointer;
@@ -103,16 +75,6 @@ void UART2Init(void)
 	//SPI_errorBuffer=(struct MultiCircBuffer*)&SPIerrorBuffer;
 	//newMultiCircBuffer(SPI_errorBuffer);
 	need_buffer=0;
-	buffa.inter.header1='%';
-	buffa.inter.header2='&';
-	buffa.inter.footer1='^';
-	buffa.inter.footer2='&';
-	buffa.inter.id=0x1f1f;
-	buffb.inter.header1='%';
-	buffb.inter.header2='&';
-	buffb.inter.footer1='^';
-	buffb.inter.footer2='&';
-	buffb.inter.id=0x1f1f;
 	//pointer=inpointer;  //associate pointer with file system
 	//FSfwrite("hmm",1,3, pointer);
 	//printf("hi guys");
@@ -237,10 +199,10 @@ char UART2IsEmpty()
 }	
 
 
-BYTE oldcalc_checksum(BYTE inBuffer[], BYTE outBuffer[])
+unsigned char oldcalc_checksum(unsigned char inBuffer[], unsigned char outBuffer[])
 {
 		// Loop through all chars to get a checksum
-		BYTE checkSum; //= inBuffer[0];
+		unsigned char checkSum; //= inBuffer[0];
 		checkSum=inBuffer[0];
 		outBuffer[0]=inBuffer[0];
 		int i;
