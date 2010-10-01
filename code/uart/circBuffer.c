@@ -19,9 +19,9 @@
 #include "circBuffer.h"
 
 
-#if DEBUG
+//#if DEBUG
 	#include <stdio.h>
-#endif
+//#endif
 
 
 // Constructors - Destructors
@@ -219,27 +219,28 @@ unsigned char getOverflow(CBRef cB){
 	return 0;
 }
 
-#if DEBUG
+//#if DEBUG
 // Other Functions
 // ===============
 // prints the circular buffer, used for debug
 void printCircBuf(CBRef cB){
 	// if the circular buffer is not null
 	if (cB != NULL){
-		printf("[");
+		//printf("[");
 		int i;
-		for(i = 0; i < cB->size; ++i)
+		/*for(i = 0; i < cB->size; ++i)
 		{
-			printf("%d ", cB->buffer[i]);
-		}
-		printf("]\n");
-		printf("Size of: %d\n", cB->size );
-		printf("Head at: %d\n", cB->head );
-		printf("Tail at: %d\n\n", cB->tail );
+			if(cB->buffer[i]!=0)
+				printf("%c ", cB->buffer[i]);
+		}*/
+		//printf("]\n");
+		printf("Size of: %d\r\n", getLength(cB) );
+		printf("Head at: %d\r\n", cB->head );
+		printf("Tail at: %d\r\n\n", cB->tail );
 
 	}
 	else{
 		printf("Calling Print on an empty Circular Buffer");
 	}
 }
-#endif
+//#endif

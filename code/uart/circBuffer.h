@@ -89,12 +89,12 @@ void makeEmpty (CBRef cB);
 unsigned char getOverflow(CBRef cB);
 
 
-#if DEBUG
+//#if DEBUG
 	// Other Functions
 	// ===============
 	// prints the circular buffer, used for debug
 	void printCircBuf(CBRef cB);
-#endif /* DEBUG */
+//#endif /* DEBUG */
 
 #ifdef __cplusplus
        }
