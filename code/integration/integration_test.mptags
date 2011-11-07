@@ -17,8 +17,8 @@ BSIZE::512	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\logg
 BSec	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1354;"	l	line:1354
 BSec	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	854;"	l	line:854
 BSec	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	997;"	l	line:997
-BUFFERSIZE::512	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	12;"	d	line:12	file:
 BUFFERSIZE::512	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	13;"	d	line:13	file:
+BUFFERSIZE::512	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	11;"	d	line:11	file:
 BUTTONONE::!_RD6	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h	16;"	d	line:16
 BUTTONTWO::!_RD7	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h	17;"	d	line:17
 BYTE	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c	6;"	t	line:6	file:
@@ -85,7 +85,7 @@ CreateFileEntry	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 
 CreateFileEntry	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	252;"	p	line:252	file:	signature:(FILEOBJ fo, WORD *fHandle, BYTE mode)
 CreateFirstCluster	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2104;"	f	line:2104	signature:(FILEOBJ fo)
 CreateFirstCluster	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	250;"	p	line:250	file:	signature:(FILEOBJ fo)
-CurrentSector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	53;"	l	line:53	file:
+CurrentSector	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	48;"	l	line:48	file:
 CyHdSc	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1237;"	l	line:1237
 DATANOTACCEPTED	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	668;"	e	line:668	enum:writr_error	file:
 DATATIMEOUT	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	669;"	e	line:669	enum:writr_error	file:
@@ -94,7 +94,7 @@ DATA_EE_BANKS::2	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_co
 DATA_EE_FLAGS	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.h	104;"	t	line:104
 DATA_EE_SIZE::255	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.h	44;"	d	line:44
 DATA_EE_TOTAL_SIZE::(DATA_EE_BANKS*DATA_EE_SIZE)	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.h	45;"	d	line:45
-DATA_LOGGER_H	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.h	7;"	d	line:7
+DATA_LOGGER_H	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.h	7;"	d	line:7
 DATA_START::0xFE	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h	36;"	d	line:36
 DATA_START_TOKEN::0xFE	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	80;"	d	line:80
 DEE_BANK_SIZE::(sizeof(emulationPages[0])*NUM	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c	102;"	d	line:102	file:
@@ -172,7 +172,7 @@ FILECreateHeadCluster	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\
 FILECreateHeadCluster	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4103;"	f	line:4103	signature:( FILEOBJ fo, DWORD *cluster)
 FILEFLAGS	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	200;"	t	line:200
 FILEOBJ	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	176;"	t	line:176	file:
-FILESIZE::10000	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	19;"	d	line:19	file:
+FILESIZE::10000	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	19;"	d	line:19	file:
 FILE_FORMAT	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	278;"	m	line:278
 FILE_FORMAT_GRP	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	282;"	m	line:282
 FILE_NAME_SIZE::11	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	242;"	d	line:242
@@ -251,7 +251,7 @@ FSrmdirpgm	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Micro
 FSvfprintf	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	279;"	p	line:279	file:	signature:(auto FSFILE *handle, auto const rom char *formatString, auto va_list ap)
 FSvfprintf	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	281;"	p	line:281	file:	signature:(FSFILE *handle, const char *formatString, va_list ap)
 FSvfprintf	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8267;"	f	line:8267	signature:(auto FSFILE *handle, auto const rom char * formatString, auto va_list ap)
-FWDTEN_OFF	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	14;"	v	line:14
+FWDTEN_OFF	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	14;"	v	line:14
 Fail	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1796;"	e	line:1796	enum:_status	file:
 Fail	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8957;"	e	line:8957	enum:_status	file:
 FatRootDirClusterValue	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	109;"	v	line:109
@@ -295,7 +295,7 @@ Good	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\F
 Good	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8957;"	e	line:8957	enum:_status	file:
 HEADER_ONE::'%'	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h	44;"	d	line:44
 HEADER_TWO::'&'	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h	45;"	d	line:45
-IESO_ON	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	12;"	v	line:12
+IESO_ON	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	12;"	v	line:12
 ILLEGAL_CMD	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	207;"	m	line:207
 ILLEGAL_CMD	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	230;"	m	line:230
 INIT::(0x40+1)	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h	26;"	d	line:26
@@ -304,8 +304,8 @@ IN_IDLE_STATE	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Mi
 IN_IDLE_STATE	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	228;"	m	line:228
 IllegalAddress	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.h	100;"	m	line:100
 IncEWCount	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.h	119;"	p	line:119	signature:(unsigned char *index)
-IncreaseSize	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	55;"	l	line:55	file:
-IncreaseSizeNow	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	54;"	l	line:54	file:
+IncreaseSize	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	50;"	l	line:50	file:
+IncreaseSizeNow	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	49;"	l	line:49	file:
 IncrementTimeStamp	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	217;"	p	line:217	file:	signature:(DIRENTRY dir)
 IncrementTimeStamp	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2884;"	f	line:2884	signature:(DIRENTRY dir)
 Increment_ID_Code	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\id_code.c	29;"	f	line:29	signature:(void)
@@ -316,8 +316,8 @@ Index	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\
 Index	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	7808;"	l	line:7808
 Index	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	7902;"	l	line:7902
 Index2	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	7467;"	l	line:7467
-Init_Data_Logger	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	28;"	f	line:28	signature:(int id)
-Init_Data_Logger	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.h	13;"	p	line:13	signature:(int id)
+Init_Data_Logger	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	23;"	f	line:23	signature:(int id)
+Init_Data_Logger	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.h	13;"	p	line:13	signature:(int id)
 LOOK_FOR_EMPTY_ENTRY	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	210;"	e	line:210
 LOOK_FOR_MATCHING_ENTRY	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	211;"	e	line:211
 LastClusterLimit	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1894;"	l	line:1894
@@ -402,7 +402,7 @@ PARAM_ERR	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microc
 PARAM_ERR	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	234;"	m	line:234
 PERM_WRITE_PROTECT	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	280;"	m	line:280
 PNM	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	344;"	m	line:344
-POSCMD_XT	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	13;"	v	line:13
+POSCMD_XT	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	13;"	v	line:13
 PRI_PRESCAL_1_1::0x0003	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	69;"	d	line:69
 PROGRAM_ROW::0x4001	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.h	48;"	d	line:48
 PROGRAM_WORD::0x4003	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.h	49;"	d	line:49
@@ -497,8 +497,8 @@ SendMMCCmd	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Micro
 SendMMCCmd	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	94;"	p	line:94	file:	signature:(BYTE cmd, DWORD address)
 SendMMCCmdManual	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	107;"	p	line:107	file:	signature:(BYTE cmd, DWORD address)
 SendMMCCmdManual	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	424;"	f	line:424	signature:(BYTE cmd, DWORD address)
-Service_Spi	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	47;"	f	line:47	signature:(FSFILE *fo)
-Service_Spi	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.h	15;"	p	line:15	signature:(FSFILE *fo)
+Service_Spi	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	42;"	f	line:42	signature:(FSFILE *fo)
+Service_Spi	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.h	15;"	p	line:15	signature:(FSFILE *fo)
 SetClockVars	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2519;"	f	line:2519	signature:(unsigned int year, unsigned char month, unsigned char day, unsigned char hour, unsigned char minute, unsigned char second)
 SetClockVars	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	1055;"	p	line:1055	signature:(unsigned int year, unsigned char month, unsigned char day, unsigned char hour, unsigned char minute, unsigned char second)
 SetPageCorruptStatus::(x)dataEEFlags.pageCorrupt=x	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.h	70;"	d	line:70
@@ -635,7 +635,7 @@ ap	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSI
 attrib	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	401;"	l	line:401
 attributes	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	264;"	m	line:264
 attributes	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	278;"	m	line:278
-attributes	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	59;"	l	line:59
+attributes	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	59;"	l	line:59
 b	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2175;"	l	line:2175
 bHandle	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2174;"	l	line:2174
 bank	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c	483;"	l	line:483
@@ -649,15 +649,13 @@ buffa	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	40;
 buffa_t	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	27;"	u	line:27	file:
 buffb	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	55;"	v	line:55
 buffb_t	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	42;"	u	line:42	file:
-buffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	230;"	l	line:230
 buffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	24;"	m	line:24	struct:CircBuffer
 buffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	33;"	m	line:33	struct:CircBuffer
 bufferEnd	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	6312;"	l	line:6312
 bufferOverflow	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	6314;"	l	line:6314
-bufferflag	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	20;"	v	line:20	file:
 bufferflag	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	60;"	v	line:60	file:
+bufferflag	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	15;"	v	line:15	file:
 bufferreturn	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.h	22;"	p	line:22	signature:(unsigned int *buffer)
-buffersign	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	231;"	l	line:231
 c	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1795;"	l	line:1795
 c	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2405;"	l	line:2405
 c	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2591;"	l	line:2591
@@ -676,7 +674,7 @@ c32filler	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microc
 cB	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c	62;"	l	line:62
 calc_checksum	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c	119;"	f	line:119	signature:(unsigned char inBuffer[])
 calc_checksum	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.h	30;"	p	line:30	signature:(unsigned char inBuffer[])
-card_initerr	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	50;"	l	line:50	file:
+card_initerr	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	45;"	l	line:45	file:
 ccls	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1724;"	l	line:1724
 ccls	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1895;"	l	line:1895
 ccls	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	253;"	m	line:253
@@ -810,7 +808,7 @@ entryptr	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microch
 eraseDir	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	261;"	p	line:261	file:	signature:(char * path)
 eraseDir	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	7805;"	f	line:7805	signature:(char * path)
 erasePage	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c	478;"	l	line:478
-erasure	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	193;"	l	line:193
+erasure	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	193;"	l	line:193
 err	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	9109;"	l	line:9109
 err	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\id_code.c	13;"	l	line:13
 err	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\id_code.c	33;"	l	line:33
@@ -828,7 +826,7 @@ error	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\
 error	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	852;"	l	line:852
 error	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8903;"	l	line:8903
 error	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	996;"	l	line:996
-error	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	57;"	l	line:57
+error	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	52;"	l	line:52
 expiredPage	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.h	96;"	m	line:96
 f	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	7897;"	l	line:7897
 f	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8028;"	l	line:8028
@@ -848,14 +846,14 @@ fatsize	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchi
 field	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	163;"	m	line:163
 filePtr	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	3450;"	l	line:3450
 filename	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	277;"	m	line:277
-filename	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	86;"	l	line:86
+filename	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	86;"	l	line:86
 filesize	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4487;"	l	line:4487
 filesize	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	279;"	m	line:279
 final	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	3456;"	l	line:3456
 first	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	9018;"	l	line:9018	file:
 firstSector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	528;"	l	line:528
-first_sector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	35;"	v	line:35	file:
-first_sector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	55;"	l	line:55
+first_sector	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	30;"	v	line:30	file:
+first_sector	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	55;"	l	line:55
 flags	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8279;"	l	line:8279
 flags	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	258;"	m	line:258
 flushData	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	241;"	p	line:241	file:	signature:(void)
@@ -924,16 +922,16 @@ i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\write.c	20;"	
 i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c	238;"	l	line:238
 i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c	298;"	l	line:298
 i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c	605;"	l	line:605
-i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	60;"	l	line:60
 i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c	203;"	l	line:203
 i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c	230;"	l	line:230
 i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c	35;"	l	line:35
 i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c	125;"	l	line:125
 i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c	20;"	l	line:20
 i	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	246;"	l	line:246
-id	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	71;"	l	line:71
+i	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	60;"	l	line:60
 id	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	37;"	m	line:37	struct:buffa_t::<anonymous>	file:
 id	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	52;"	m	line:52	struct:buffb_t::<anonymous>	file:
+id	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	71;"	l	line:71
 incomingUart	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	14;"	v	line:14
 index	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2047;"	l	line:2047
 index	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2990;"	l	line:2990
@@ -981,11 +979,11 @@ loWord	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip
 mReadCRC::WriteSPIM(0xFF);WriteSPIM(0xFF	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	403;"	d	line:403
 mSend8ClkCycles::WriteSPIM(0xFF);	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	409;"	d	line:409
 mSendCRC::WriteSPIM(0xFF);WriteSPIM(0xFF	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	406;"	d	line:406
-main	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	51;"	f	line:51	signature:(void)
+main	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	51;"	f	line:51	signature:(void)
 makeEmpty	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c	201;"	f	line:201	signature:(CBRef cB)
 makeEmpty	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	86;"	p	line:86	signature:(CBRef cB)
 masterBootRecord	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1352;"	l	line:1352
-maxbuffersize	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	51;"	l	line:51	file:
+maxbuffersize	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	46;"	l	line:46	file:
 minsec	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2405;"	l	line:2405
 minutes	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2887;"	l	line:2887
 mkdirhelper	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	264;"	p	line:264	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr)
@@ -1000,9 +998,9 @@ n	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO
 name	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2049;"	l	line:2049
 name	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	261;"	m	line:261
 needRead	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4562;"	l	line:4562
-need_buffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	21;"	v	line:21	file:
 need_buffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	61;"	v	line:61	file:
-need_write	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	22;"	v	line:22	file:
+need_buffer	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	16;"	v	line:16	file:
+need_write	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	17;"	v	line:17	file:
 newCircBuffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c	32;"	f	line:32	signature:(CBRef cB)
 newCircBuffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c	60;"	f	line:60	signature:(int pm_size)
 newCircBuffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	50;"	p	line:50	signature:(CBRef cB)
@@ -1015,7 +1013,7 @@ num_clusters	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Mic
 numofclus	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1897;"	l	line:1897
 numsector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	5137;"	l	line:5137
 ofb_buffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c	7;"	v	line:7
-ofb_error	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	56;"	l	line:56
+ofb_error	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	51;"	l	line:51
 ofb_head	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c	9;"	v	line:9
 ofb_size	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c	11;"	v	line:11
 ofb_tail	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c	10;"	v	line:10
@@ -1024,7 +1022,7 @@ offset2	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchi
 offset2	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	5140;"	l	line:5140
 oldcalc_checksum	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	240;"	f	line:240	signature:(BYTE inBuffer[], BYTE outBuffer[])
 oldcalc_checksum	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.h	23;"	p	line:23	signature:(BYTE inBuffer[], BYTE outBuffer[])
-outbuf	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	110;"	l	line:110
+outbuf	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	102;"	l	line:102
 outgoingUart	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	11;"	v	line:11
 overflowCount	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	28;"	m	line:28	struct:CircBuffer
 overflowCount	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	37;"	m	line:37	struct:CircBuffer
@@ -1047,7 +1045,7 @@ pmOffset	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\
 pmOffset	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c	603;"	l	line:603
 pmOffset	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c	683;"	l	line:683
 pointer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4766;"	l	line:4766
-pointer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	54;"	l	line:54
+pointer	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	54;"	l	line:54
 pos	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4485;"	l	line:4485
 pos	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4769;"	l	line:4769
 pos	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	255;"	m	line:255
@@ -1074,9 +1072,9 @@ readHead	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuff
 readHead	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	66;"	p	line:66	signature:(CBRef cB)
 readTail	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c	133;"	f	line:133	signature:(CBRef cB)
 readTail	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	69;"	p	line:69	signature:(CBRef cB)
-rec	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	57;"	l	line:57
+rec	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	57;"	l	line:57
 recache	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	115;"	v	line:115
-receiveBuffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	17;"	v	line:17
+receiveBuffer	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	17;"	v	line:17
 res	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4262;"	l	line:4262
 response	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	1037;"	l	line:1037
 response	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	329;"	l	line:329
@@ -1118,22 +1116,22 @@ sector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip
 sector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	1893;"	l	line:1893
 sector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4336;"	l	line:4336
 sector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	7261;"	l	line:7261
-sector_count	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	52;"	l	line:52	file:
+sector_count	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	47;"	l	line:47	file:
 seek	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4487;"	l	line:4487
 seek	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4768;"	l	line:4768
 seek	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	256;"	m	line:256
-send2	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	16;"	v	line:16
-sendBuffer	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	15;"	v	line:15
-set_First_Sector	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	37;"	f	line:37	signature:(DWORD sector)
+send2	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	16;"	v	line:16
+sendBuffer	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	15;"	v	line:15
+set_First_Sector	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	32;"	f	line:32	signature:(DWORD sector)
 sh_SR	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c	131;"	l	line:131
 sign_char	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8631;"	l	line:8631
 size	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4061;"	l	line:4061
 size	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	7258;"	l	line:7258
 size	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8283;"	l	line:8283
 size	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	257;"	m	line:257
-size	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	60;"	l	line:60
 size	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	27;"	m	line:27	struct:CircBuffer
 size	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h	36;"	m	line:36	struct:CircBuffer
+size	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	60;"	l	line:60
 size2	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8285;"	l	line:8285
 source	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	4063;"	l	line:4063
 space_cnt	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	8287;"	l	line:8287
@@ -1166,7 +1164,7 @@ temp	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\F
 temp	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	5137;"	l	line:5137
 temp	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	9020;"	l	line:9020
 temp	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\write.c	21;"	l	line:21
-temp	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	118;"	l	line:118
+temp	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	110;"	l	line:110
 tempArray	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	5902;"	l	line:5902
 tempArray	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	6758;"	l	line:6758
 tempArray	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	7351;"	v	line:7351
@@ -1189,7 +1187,7 @@ test	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\F
 test	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	2993;"	l	line:2993
 test	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	405;"	l	line:405
 test	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	5139;"	l	line:5139
-test_array	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c	56;"	l	line:56
+test_array	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c	56;"	l	line:56
 time	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h	259;"	m	line:259
 timeout	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	1035;"	l	line:1035
 timeout	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c	327;"	l	line:327
@@ -1198,7 +1196,7 @@ timestamp	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microc
 total	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	39;"	m	line:39	union:buffa_t	file:
 total	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c	54;"	m	line:54	union:buffb_t	file:
 totalchars	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	6310;"	l	line:6310
-totalerr	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c	49;"	l	line:49	file:
+totalerr	C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c	44;"	l	line:44	file:
 txreg	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\write.c	24;"	l	line:24
 typMMC_CMD	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h	152;"	t	line:152
 type	C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c	853;"	l	line:853

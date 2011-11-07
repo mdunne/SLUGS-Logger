@@ -4,11 +4,11 @@ C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\DEE.c
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\Flash Operations.s
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\id_code.c
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\integration_test.c
+C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\integration_test.c
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.c
+C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.c
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h
@@ -17,4 +17,4 @@ C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\id_code_test\id_code.h
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.h
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.h
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\integration\data_logger.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\integration\data_logger.h

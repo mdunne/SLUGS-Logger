@@ -72,12 +72,7 @@ void UART2Init(void)
 	newCircBuffer(UART_transmitBuffer);
 	//printf("%p\r\n",BufferB);
 	#ifdef DMAON
-	//SPI_errorBuffer=(struct MultiCircBuffer*)&SPIerrorBuffer;
-	//newMultiCircBuffer(SPI_errorBuffer);
 	need_buffer=0;
-	//pointer=inpointer;  //associate pointer with file system
-	//FSfwrite("hmm",1,3, pointer);
-	//printf("hi guys");
 	DMA0CON=0x0002; 
 	DMA0CONbits.DIR=0; //peripheral to ram
 	DMA0CONbits.MODE=2; // ping pong
@@ -143,7 +138,6 @@ char UART2GetChar()
 }
 	
 
-//static unsigned int BufferCount;
 #ifdef DMAON
 
 //flips between buffers and sets flag to tell which to read
@@ -155,16 +149,10 @@ void __attribute__((__interrupt__)) _DMA0Interrupt(void)
 	if(BufferCount==0)
 	{
 		OFB_push(BufferA);
-		//MDD_SDSPI_SectorWrite(CurrentSector,BufferA,0);
-		//CurrentSector++;
-		//bufferflag=1;
 	}
 	else
 	{
 		OFB_push(BufferB);
-		//MDD_SDSPI_SectorWrite(CurrentSector,BufferB,0);
-		//CurrentSector++;
-		//bufferflag=0;
 	}
 	BufferCount ^=1;
 	IFS0bits.DMA0IF=0;
@@ -173,9 +161,6 @@ void __attribute__((__interrupt__)) _DMA0Interrupt(void)
 #else
 void __attribute__((__interrupt__, no_auto_psv)) _U2RXInterrupt(void)
 {
-	//UART2PutChar('q');
-	//char temp;
-	//temp=U2RXREG;
 	while(U2STAbits.URXDA == 1){
 		writeBack(UART_receiveBuffer, (unsigned char)U2RXREG);
 	}
@@ -199,6 +184,8 @@ char UART2IsEmpty()
 }	
 
 
+
+//funcionality has been moved to the overflow buffer file
 unsigned char oldcalc_checksum(unsigned char inBuffer[], unsigned char outBuffer[])
 {
 		// Loop through all chars to get a checksum

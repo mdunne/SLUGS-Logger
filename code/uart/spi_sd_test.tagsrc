@@ -1,8 +1,8 @@
-C:\Files\classes\gabe\uav data logger\code\uart\main.c
-C:\Files\classes\gabe\uav data logger\code\uart\uart2.c
-C:\Files\classes\gabe\uav data logger\code\uart\circBuffer.c
-C:\Files\classes\gabe\uav data logger\code\common\write.c
-C:\Program Files\Microchip\MPLAB C30\support\dsPIC33F\h\p33FJ256GP710.h
-C:\Files\classes\gabe\uav data logger\code\uart\uart2.h
-C:\Files\classes\gabe\uav data logger\code\uart\circBuffer.h
-C:\Files\classes\gabe\uav data logger\code\common\loggerDefinitions.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\uart\main.c
+C:\Users\mdunne\Documents\SLUGS-Logger\code\uart\uart2.c
+C:\Users\mdunne\Documents\SLUGS-Logger\code\uart\circBuffer.c
+C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\write.c
+C:\Program Files (x86)\Microchip\mplabc30\v3.30b\support\dsPIC33F\h\p33FJ256GP710.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\uart\uart2.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\uart\circBuffer.h
+C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h

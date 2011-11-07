@@ -23,16 +23,15 @@ int main ( void )
         //            Crystal Frequency  * (DIVISOR+2)
         // Fcy =     ---------------------------------
         //             PLLPOST * (PRESCLR+2) * 4	
-        PLLFBD =38;
-        CLKDIVbits.PLLPOST=0;
-        CLKDIVbits.PLLPRE=0;
-        __builtin_write_OSCCONH(0b011);
-        __builtin_write_OSCCONL(0b01);
+    PLLFBD =38;
+    CLKDIVbits.PLLPOST=0;
+    CLKDIVbits.PLLPRE=0;
+    __builtin_write_OSCCONH(0b011);
+    __builtin_write_OSCCONL(0b01);
 	while (OSCCONbits.COSC != 0b011);	// Wait for Clock switch to occur	
 	while(OSCCONbits.LOCK != 1) {};
 	UART2Init();
-	char temp;
-	printf("hmm, does this work after all");
+	printf("UART TEST");
 	while(1)
 	{		
 		if(!UART2IsEmpty())

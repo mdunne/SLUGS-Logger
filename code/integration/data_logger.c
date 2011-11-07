@@ -6,17 +6,12 @@
 #include "stdio.h"
 #include "loggerDefinitions.h"
 #include "overflowBuffer.h"
-#include "id_code.h"
 
 
 #define BUFFERSIZE 512
 
 	#include "SD-SPI.h"
 	
-	// struct containing all parts a packet to allow easy writing
-	
-	
-
 	static char bufferflag;
 	static char need_buffer;
 	static int need_write;
@@ -72,8 +67,6 @@ void Service_Spi(FSFILE *fo)
 		}	
 		if (OFB_getSize()!=0)//if (need_write==1)
 		{
-			//OFB_push(buffa.total);
-			//totalerr++;
 			#ifdef __DEBUG
 				//printf("err: %d\t%lu\t%d\r\n",error,CurrentSector,totalerr);
 				//printf("modulo Result: %lu\r\n",(CurrentSector-first_sector)%CHEW_FAT_SIZE);
@@ -84,7 +77,6 @@ void Service_Spi(FSFILE *fo)
 					//printf("Allocating file: %lu\r\n",CurrentSector);
 				#endif
 				IncreaseSize=TRUE;
-				//FSfclose(fo);
 				sector_count=1;
 				if (CurrentSector==0)
 				{

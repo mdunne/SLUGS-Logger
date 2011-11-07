@@ -227,7 +227,7 @@ void printCircBuf(CBRef cB){
 	// if the circular buffer is not null
 	if (cB != NULL){
 		//printf("[");
-		int i;
+		//int i;
 		/*for(i = 0; i < cB->size; ++i)
 		{
 			if(cB->buffer[i]!=0)

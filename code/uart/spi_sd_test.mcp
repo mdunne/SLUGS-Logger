@@ -8,7 +8,7 @@ dir_src=
 dir_bin=
 dir_tmp=
 dir_sin=
-dir_inc=C:\Program Files\Microchip\MPLAB C30\src\pic30;C:\Files\classes\gabe\uav data logger\code\FAT16 Microchip\Common;C:\Files\classes\gabe\uav data logger\code\uart
+dir_inc=..\common;..\uart
 dir_lib=C:\Program Files\Microchip\MPLAB C30\lib
 dir_lkr=
 [CAT_FILTERS]
@@ -57,12 +57,12 @@ file_008=no
 file_000=main.c
 file_001=uart2.c
 file_002=circBuffer.c
-file_003=C:\Files\classes\gabe\uav data logger\code\common\write.c
-file_004=C:\Program Files\Microchip\MPLAB C30\support\dsPIC33F\h\p33FJ256GP710.h
+file_003=C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\write.c
+file_004=C:\Program Files (x86)\Microchip\mplabc30\v3.30b\support\dsPIC33F\h\p33FJ256GP710.h
 file_005=uart2.h
 file_006=circBuffer.h
-file_007=C:\Files\classes\gabe\uav data logger\code\common\loggerDefinitions.h
-file_008=C:\Program Files\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ256GP710.gld
+file_007=C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h
+file_008=C:\Program Files (x86)\Microchip\mplabc30\v3.30b\support\dsPIC33F\gld\p33FJ256GP710.gld
 [SUITE_INFO]
 suite_guid={479DDE59-4D56-455E-855E-FFF59A3DB57E}
 suite_state=

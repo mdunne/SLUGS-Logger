@@ -42,6 +42,7 @@
 #include "MDD File System\FSIO.h"
 #include "p33FJ256GP710.h"
 #include "stdio.h"
+#include "UART2.h"
 #include "overflowBuffer.h"
 _FOSCSEL(FNOSC_FRC & IESO_ON);
 _FOSC(FCKSM_CSECMD & OSCIOFNC_OFF & POSCMD_XT);
@@ -207,11 +208,9 @@ int main (void)
       //FSfseek(pointer,0,SEEK_SET);
 	//set_First_Sector(first_sector);
    //FSfwrite("greetings",1,9,pointer);
-   //do_stuff(pointer);
    printf("waiting for operation\r\n");
    //FSfwrite("greetings",1,9,pointer);
    //allocate_size(38769,pointer);
-   //do_stuff(pointer);
    DWORD sizeinbytes;
    //need to convert from number of sectors to number of bytes and allocate that much space
    sizeinbytes=(DWORD)FILESIZE*(DWORD)512;
@@ -286,170 +285,6 @@ int main (void)
 		while(1){}
 	}
 	}
-	/*
-   // Write 21 1-byte objects from sendBuffer into the file
-   if (FSfwrite (sendBuffer, 1, 21, pointer) != 21)
-      while(1);
-
-   // FSftell returns the file's current position
-   if (FSftell (pointer) != 21)
-      while(1);
-
-   // FSfseek sets the position one byte before the end
-   // It can also set the position of a file forward from the
-   // beginning or forward from the current position
-   if (FSfseek(pointer, 1, SEEK_END))
-      while(1);
-
-   // Write a 2 at the end of the string
-   if (FSfwrite (send2, 1, 1, pointer) != 1)
-      while(1);
-
-   // Close the file
-   if (FSfclose (pointer))
-      while(1);
-
-   // Create a second file
-   pointer = FSfopen ("FILE2.TXT", "w");
-   if (pointer == NULL)
-      while(1);
-
-   // Write the string to it again
-   if (FSfwrite ((void *)sendBuffer, 1, 21, pointer) != 21)
-      while(1);
-
-   // Close the file
-   if (FSfclose (pointer))
-      while(1);
-
-   // Open file 1 in read mode
-   pointer = FSfopen ("FILE1.TXT", "r");
-   if (pointer == NULL)
-      while(1);
-
-   // Read one four-byte object
-   if (FSfread (receiveBuffer, 4, 1, pointer) != 1)
-      while(1);
-
-   // Check if this is the end of the file- it shouldn't be
-   if (FSfeof (pointer))
-      while(1);
-
-   // Close the file
-   if (FSfclose (pointer))
-      while(1);
-
-   // Make sure we read correctly
-   if ((receiveBuffer[0] != 'T') ||
-         (receiveBuffer[1] != 'h')  ||
-         (receiveBuffer[2] != 'i')  ||
-         (receiveBuffer[3] != 's'))
-   {
-      while(1);
-   }
-
-   // Create a small directory tree
-   // Beginning the path string with a '.' will create the tree in
-   // the current directory.  Beginning with a '..' would create the
-   // tree in the previous directory.  Beginning with just a '\' would
-   // create the tree in the root directory.  Beginning with a dir name
-   // would also create the tree in the current directory
-   if (FSmkdir (".\\ONE\\TWO\\THREE"))
-      while(1);
-
-   // Change to directory THREE in our new tree
-   if (FSchdir ("ONE\\TWO\\THREE"))
-      while(1);
-
-   // Create another tree in directory THREE
-   if (FSmkdir ("FOUR\\FIVE\\SIX"))
-      while(1);
-
-   // Create a third file in directory THREE
-   pointer = FSfopen ("FILE3.TXT", "w");
-   if (pointer == NULL)
-      while(1);
-
-   // Get the name of the current working directory it should be "\ONE\TWO\THREE"
-   pointer2 = FSgetcwd (path, count);
-   if (pointer2 != path)
-      while(1);
-
-   // Simple string length calculation
-   i = 0;
-   while(*(path + i) != 0x00)
-   {
-      size++;
-      i++;
-   }
-   // Write the name to FILE3.TXT
-   if (FSfwrite (path, size, 1, pointer) != 1)
-      while(1);
-
-   // Close the file
-   if (FSfclose (pointer))
-      while(1);
-
-   // Create some more directories
-   if (FSmkdir ("FOUR\\FIVE\\SEVEN\\..\\EIGHT\\..\\..\\NINE\\TEN\\..\\ELEVEN\\..\\TWELVE"))
-      while(1);*/
-
-   /*******************************************************************
-      Now our tree looks like this
-
-      \ -> ONE -> TWO -> THREE -> FOUR -> FIVE -> SIX
-                                                 -> SEVEN
-                                                 -> EIGHT
-                                            NINE -> TEN
-                                                 -> ELEVEN
-                                                 -> TWELVE
-   ********************************************************************/
-
-   // This will delete only directory eight
-   // If we tried to delete directory FIVE with this call, the FSrmdir
-   // function would return -1, since FIVE is non-empty
-   /*if (FSrmdir ("\\ONE\\TWO\\THREE\\FOUR\\FIVE\\EIGHT", FALSE))
-      while(1);
-
-   // This will delete directory NINE and all three of its sub-directories
-   if (FSrmdir ("FOUR\\NINE", TRUE))
-      while(1);
-
-   // Change directory to the root dir
-   if (FSchdir ("\\"))
-      while(1);
-
-   // Set attributes
-   attributes = ATTR_DIRECTORY | ATTR_ARCHIVE | ATTR_READ_ONLY | ATTR_HIDDEN;
-   // Find the first TXT file with any (or none) of those attributes that
-   // has a name beginning with the letters "FILE"
-   // These functions are more useful for finding out which files are
-   // in your current working directory
-   if (FindFirst ("FILE*.TXT", attributes, &rec))
-      while(1);
-
-   // Keep finding files until we get FILE2.TXT
-   while(rec.filename[4] != '2')
-   {
-      if (FindNext (&rec))
-         while(1);
-   }
-
-   // Delete file 2
-   if (FSremove (rec.filename))
-      while(1);*/
-
-MDD_ShutdownMedia();
-/*********************************************************************
-   The final contents of our card should look like this:
-   \ -> FILE1.TXT
-      -> ONE       -> TWO -> THREE -> FILE3.TXT
-                                   -> FOUR      -> FIVE -> SIX
-                                                        -> SEVEN
-
-*********************************************************************/
-
-
    while(1);
 }
 

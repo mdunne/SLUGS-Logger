@@ -1,17 +1,17 @@
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\Demonstration.c
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\FSIO.c
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\SD-SPI.c
+C:\Users\mdunne\Documents\SLUGS-Logger\code\FAT16 Microchip\Demonstration.c
+C:\Users\mdunne\Documents\SLUGS-Logger\code\FAT16 Microchip\FSIO.c
+C:\Users\mdunne\Documents\SLUGS-Logger\code\FAT16 Microchip\SD-SPI.c
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.c
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.c
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\write.c
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.c
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSIO.h
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\SD-SPI.h
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSconfig.h
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\FSDefs.h
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MDD File System\HardwareProfile.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\FAT16 Microchip\MDD File System\FSIO.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\FAT16 Microchip\MDD File System\SD-SPI.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\FAT16 Microchip\MDD File System\FSconfig.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\FAT16 Microchip\MDD File System\FSDefs.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\FAT16 Microchip\MDD File System\HardwareProfile.h
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\uart2.h
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\circBuffer.h
-C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\FAT16 Microchip\MCCR_Defines.h
+C:\Users\mdunne\Documents\SLUGS-Logger\code\FAT16 Microchip\MCCR_Defines.h
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\common\loggerDefinitions.h
 C:\Users\mdunne\Documents\My Dropbox\uav data logger\code\uart\overflowBuffer.h
